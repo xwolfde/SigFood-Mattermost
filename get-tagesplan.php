@@ -7,7 +7,7 @@
 
 $CONST = array(
     // insert here the url you get from Mattermost as URL for incoming webhook
-    "webhook_url"	=> 'https://mattermost.rrze.fau.de/hooks/7ugztqgchf8oppcay965j8as7w', 
+    "webhook_url"	=> '', 
     
     // in which channel
     "channel"		=> "town-square",
