@@ -9,6 +9,13 @@ ausgelesen und mit Hilfe dieses SKripts an ein Mattermost-Webhook gesandt.
 ## Beispielausgabe
 ![Foto](screenshot-sample.png)
 
+
+## Requirements
+
+* PHP
+* PHP-curl
+
+
 ## Installation und Konfiguration
 
 1. Erstellen eines Webhooks im Mattermost

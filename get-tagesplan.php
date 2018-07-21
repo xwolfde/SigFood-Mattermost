@@ -3,6 +3,13 @@
 /* 
  * Skript um den aktuellen Speiseplan von der SigFood-Weseite zu holen und diese
  * via POST Request an ein Mattermost-Hook-Adresse zu senden
+ * 
+ * Version:         0.3
+ * Author:          xwolf
+ * Author URI:      https://www.xwolf.de
+ * License:         GNU General Public License v2
+ * License URI:     http://www.gnu.org/licenses/gpl-2.0.html
+ * GitHub URI:      https://github.com/xwolfde/SigFood-Mattermost
  */
 
 $CONST = array(
@@ -92,7 +99,8 @@ function create_textpayload($xmlobj) {
 	}
 	$out .= "\n\n";
     }
-
+    $titlespalte = $linienspalte = $bildspalte = $preisspalte = $bewertung = '';
+    
     if ( isset($xmlobj['Tagesmenue']) && is_object($xmlobj['Tagesmenue']) ) {
 	
 	$tagesmenu = (array) $xmlobj['Tagesmenue'];
