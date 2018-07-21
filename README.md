@@ -51,7 +51,7 @@ Wolfgang Wiese ( [xwolf](https://www.xwolf.de) )
 
 ## Thanks 
 
-Danke an Michael Meier für die Bereitstelklung von SigFood.de
+Danke an Michael Meier für die Bereitstelklung von [SigFood.de](https://www.sigfood.de)
 
 ## Copyright
 
