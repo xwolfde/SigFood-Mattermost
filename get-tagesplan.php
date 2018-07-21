@@ -44,6 +44,12 @@ $CONST = array(
 /*-----------------------------------------------------------------------------------*/
 /* Main
 /*-----------------------------------------------------------------------------------*/
+ $webhookurl = filter_var($CONST['webhook_url'], FILTER_SANITIZE_URL);
+    if (empty($webhookurl)) {
+	echo "No valid Webhook-URL!\n";
+	exit;
+    }
+
 $xmlstr = get_xml_from_url($CONST["sigfood_api_url"]);
 
 $xmlobj=simplexml_load_string($xmlstr, null, LIBXML_NOCDATA); 
